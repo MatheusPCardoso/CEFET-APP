@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Cefet Park",
+    "slug": "cefetpark",
+    "version": "0.1v",
+    "orientation": "portrait",
+    "icon": "./assets/logoPark.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "infoPlist": {
+      "NSFaceIDUsageDescription": "É necessário utilizar o FaceID para validar o usuário."
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "package": "com.cefetrjpark.cefetpark"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "owner": "cefetrjpark",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
+        }
+      ]
+    ]
+  }
+}
